@@ -1,0 +1,110 @@
+.doctor-result {
+  .doctor-img {
+    position: relative;
+    height: 13rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+
+    @include mobile() {
+      height: 15rem;
+    }
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  .doctor-name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0.5rem;
+  }
+
+  .speciality {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 3rem;
+  }
+
+  .drate-holder {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drate {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .experience {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+    .eimg {
+      position: relative;
+      height: 2rem;
+      width: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    span {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  .availanle-for {
+    .heading {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .types {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .action-btn {
+      @include mobile() {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .review {
+    background: #D0E9F7;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+
+    .heading {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 500;
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 21px;
+      font-style: italic;
+      margin-bottom: 2rem;
+
+      &.normal-text {
+       font-style: unset;
+      }
+    }
+
+    .readmore-btn {
+      border: 1px solid $orange !important;
+      color: $orange;
+      background: transparent;
+    }
+
+
+  }
+}

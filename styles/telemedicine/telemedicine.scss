@@ -1,0 +1,373 @@
+.telemedicine {
+  .telemedicine-main {
+    .banner {
+      background: #095cb2;
+      height: 40rem;
+      position: relative;
+
+      @include mobile() {
+        height: fit-content;
+      }
+
+      .banner-text {
+        padding: 10rem 3rem 2rem;
+        width: 66%;
+
+        @include mobile() {
+          padding: 4rem 1.5rem 2rem;
+          width: 100%;
+        }
+
+        .title {
+          font-size: 54px;
+          line-height: 58px;
+          font-weight: 700;
+          color: $white;
+        }
+        .footnote {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 5rem;
+          color: $white;
+
+          @include mobile() {
+            margin-bottom: 1em;
+          }
+        }
+      }
+
+      .bannerimg {
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        height: 35rem;
+        width: 30rem;
+
+        @include mobile() {
+          display: none;
+        }
+      }
+    }
+
+    .plans {
+      padding: 0 3rem;
+      position: relative;
+      z-index: 1;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .plans-holder {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .plans-item {
+        padding: 2rem 0rem;
+        height: fit-content;
+        background: #095cb2;
+        box-shadow: 0px 5px 20px rgba(196, 196, 196, 0.37);
+
+        &:nth-child(2) {
+          border: 0.5px solid $white;
+          height: 36.6rem;
+          margin-top: -7rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 3rem 0rem 2rem;
+
+          @include mobile() {
+            height: fit-content;
+            margin-top: unset;
+            padding: 2rem 0rem;
+          }
+        }
+
+        .footnote {
+          font-weight: 500;
+          font-size: 23px;
+          line-height: 25px;
+          color: $white;
+          text-align: center;
+        }
+
+        .pricing {
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          margin-bottom: 1rem;
+
+          .pricing-duration {
+            color: $white;
+          }
+          .pricing-amount {
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+          }
+        }
+
+        .big-pricing {
+          padding: 0.5rem 4rem;
+          background: $orange;
+          margin-bottom: 1rem;
+          .footnote {
+            font-weight: 700;
+            margin-bottom: 0;
+            font-size: 24px;
+            line-height: 26px;
+          }
+        }
+
+        ul {
+          padding-left: 0;
+          list-style: none;
+          padding-top: 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 5rem;
+
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            .img {
+              margin-right: 1rem;
+              width: 1.5rem;
+              height: 1.5rem;
+              position: relative;
+            }
+
+            span {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 20px;
+              color: $white;
+            }
+          }
+        }
+
+        .btn-holder {
+          padding: 0 5rem;
+        }
+
+        .plan-btn {
+          background: $orange;
+          font-size: 22px;
+          line-height: 23px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .offer {
+      padding: 5rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        // text-align: center;
+        font-weight: 700;
+      }
+
+      .offer-holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .offer-item {
+          border-radius: 8px;
+          padding: 1rem 1rem 3rem;
+          border: 2px solid #095cb2;
+          box-sizing: border-box;
+          height: 18rem;
+
+          @include mobile() {
+            margin-bottom: 2rem;
+          }
+
+          &:nth-child(2) {
+            background: #095cb2;
+            color: $white;
+
+            .img-extra {
+              background: $white;
+              padding: 0.5rem 0rem 0.5rem 0.6rem;
+            }
+
+            .img {
+              background: $white;
+              padding: 2rem;
+            }
+          }
+
+          .img-extra {
+            padding: 0.5rem 0rem 0.5rem 0.5rem;
+            background: #095cb2;
+            width: fit-content;
+            margin-bottom: 2rem;
+          }
+
+          .img {
+            margin-right: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            position: relative;
+            background: $white;
+            background: #095cb2;
+            padding: 2rem;
+          }
+
+          .offer-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 1rem;
+          }
+
+          .offer-text {
+            font-size: 16px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+
+    .questions {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .ant-collapse-header {
+        background: $white;
+        font-size: 20px;
+        line-height: 25px;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+    }
+
+    .appoimtments {
+      background: linear-gradient(90deg, #095cb2 0%, #2b82dd 100%);
+      padding: 5rem 0rem 5rem 3rem;
+      margin-top: 3rem;
+      position: relative;
+      // display: grid;
+      // grid-template-columns: 60% 40%;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+        // grid-template-columns: 1fr;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 1rem;
+        color: $white;
+        font-weight: 700;
+      }
+      .footnote {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5rem;
+        color: $white;
+      }
+      .into-btn {
+        padding: 0.7rem 1.8rem 2.5rem;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 25px;
+        background: $orange;
+      }
+      .img {
+        width: 44rem;
+        height: 22.8rem;
+        position: absolute;
+        right: 0;
+        top: 0rem;
+
+        @include mobile() {
+          display: none;
+        }
+      }
+    }
+
+    .testby {
+      padding: 4rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      &.other {
+        .img-holder {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-column-gap: 3rem;
+
+          @include mobile() {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .img {
+            @include mobile() {
+              width: 100%;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+
+      .img-holder {
+        display: flex;
+
+        .img {
+          width: 80%;
+          height: 8rem;
+          position: relative;
+        }
+      }
+    }
+  }
+}

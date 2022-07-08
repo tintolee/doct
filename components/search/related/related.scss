@@ -1,0 +1,39 @@
+.relateddoctor {
+  margin-bottom: 2rem;
+  .img {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  .relateddoctor-name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0.5rem;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+    .eimg {
+      position: relative;
+      height: 2rem;
+      width: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    span {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}

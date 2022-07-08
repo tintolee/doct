@@ -1,0 +1,499 @@
+.book {
+  .book-main {
+    .banner {
+      width: 100%;
+      background: url("../../assets/bookbannr.svg");
+      height: 40rem;
+      background-repeat: no-repeat;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      padding: 8rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1rem 4rem;
+        height: 45rem;
+      }
+
+      .title {
+        font-size: 54px;
+        line-height: 58px;
+        font-weight: 700;
+        color: $white;
+      }
+
+      .footnote {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 2rem;
+        color: $white;
+        font-weight: 700;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    .top-rated {
+      padding: 5rem 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+
+      .footnote {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+      }
+
+      .top-rated-holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        margin-top: 2rem;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .ratedcotor {
+          border: 2px solid $orange;
+          padding: 1.5rem;
+          cursor: pointer;
+
+          @include mobile() {
+            padding: 0.5rem 1rem;
+          }
+
+          .img {
+            position: relative;
+            height: 20rem;
+            width: 100%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+
+            img {
+              border-radius: 8px;
+            }
+          }
+
+          .ratedcotor-name {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+          }
+
+          .speciality {
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 18px;
+            line-height: 21px;
+          }
+
+          .drate-holder {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .drate {
+            font-size: 18px;
+            line-height: 21px;
+          }
+
+          .experience {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+
+            .eimg {
+              position: relative;
+              height: 2rem;
+              width: 2rem;
+              margin-right: 0.5rem;
+            }
+
+            span {
+              font-size: 18px;
+              line-height: 21px;
+            }
+          }
+
+          .quote {
+            font-style: italic;
+            font-size: 18px;
+            line-height: 21px;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+
+    .frequently {
+      padding: 4rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+
+      .frequently-holder {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 2rem;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .item {
+          border: 1px solid $orange;
+          padding: 2rem 0.5rem;
+
+          .text {
+            margin-bottom: 0;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .search {
+      padding: 4rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+
+      .levels {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+
+        @include mobile() {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .search-item {
+          background: $blue;
+          padding: 1rem 1rem;
+          text-align: center;
+          margin-bottom: 0;
+          font-size: 18px;
+          line-height: 21px;
+          color: $white;
+          border-radius: 60px;
+          margin: 0 2rem;
+
+          @include mobile() {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+
+    .steps {
+      padding: 4rem 3rem 1rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .stepsholder {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+
+        @include mobile() {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .step-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .img {
+            position: relative;
+            height: 5rem;
+            width: 5rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    .search-find {
+      padding: 2rem 3rem 3rem;
+      display: grid;
+      grid-template-columns: 65% 35%;
+      grid-gap: 2rem;
+      align-items: center;
+
+      @include mobile() {
+        padding: 3rem 1.5rem 1rem;
+        grid-template-columns: 1fr;
+      }
+
+      .footnote {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 160%;
+      }
+
+      .img {
+        height: 40rem;
+        width: 100%;
+        position: relative;
+      }
+    }
+
+    .weoffer {
+      background: $fadedblue;
+      padding: 4rem 6.0625rem 1rem;
+
+      @include mobile() {
+        padding: 3rem 1rem 3rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .footnote {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5rem;
+        text-align: center;
+      }
+
+      .weoffer-holder {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 5rem;
+
+        @include mobile() {
+          grid-template-columns: 100%;
+        }
+
+        .weoffer-item {
+          @include mobile() {
+            margin-bottom: 2rem;
+          }
+          height: 13rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          .item-side {
+            height: 100%;
+            background: $carton;
+            width: 5%;
+          }
+          .item-main {
+            height: 100%;
+            background: $white;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .main-info {
+              line-height: 28.95px;
+              font-weight: 500;
+              font-size: 24px;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .aciton-holder {
+        margin-top: 2rem;
+        .view-more {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .best {
+      background: #2d9cdb;
+      padding: 6rem 6.0625rem 6rem;
+
+      @include mobile() {
+        padding: 3rem 1rem 3rem;
+      }
+
+      .title {
+        font-size: 54px;
+        line-height: 58px;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+      }
+      .footnote {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 2rem;
+        color: $white;
+        font-weight: 700;
+        text-align: center;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    .rightdoctor {
+      padding: 6rem 3rem 4rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .doctor-holder {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .doctor-type {
+          font-size: 23px;
+          line-height: 27px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .testimonies {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .testimonies-holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .testimony {
+          background: $white;
+          box-shadow: 0px 5px 20px rgba(196, 196, 196, 0.37);
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .test-text {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .user-info {
+            display: flex;
+            margin-top: 3rem;
+            align-items: center;
+            .img {
+              position: relative;
+              border-radius: 50%;
+              height: 4.5rem;
+              width: 4.5rem;
+              margin-right: 1rem;
+            }
+            .user-name {
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

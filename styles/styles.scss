@@ -1,0 +1,415 @@
+@import "./mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.ant-collapse {
+  background: transparent !important;
+  border: unset;
+  .ant-collapse-item {
+    border-radius: 5px !important;
+    border: 1px solid lightgray;
+  }
+}
+
+.ant-btn {
+  border-radius: 8px;
+  height: 3rem;
+  outline: none;
+  box-shadow: none;
+  background: $blue;
+  color: $white;
+  border: 1px solid transparent !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid transparent !important;
+    background: $blue;
+    outline: none !important;
+    box-shadow: none !important;
+    color: $white;
+  }
+}
+
+.submit-form-modal {
+  .submit-form {
+    .submit-btn {
+      padding: 0.7rem 1.8rem 2rem;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      border-radius: 60px;
+    }
+  }
+}
+
+.ant-picker,
+.ant-picker.ant-picker-focused {
+  width: 100% !important;
+  height: 3.2rem;
+  border-radius: 8px;
+  border-color: $lightgrey !important;
+  box-shadow: none !important;
+  padding: 1rem;
+  background: $white;
+  font-family: "Avenir-Regular", sans-serif !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    height: 3.2rem;
+    border-radius: 8px;
+    border-color: $lightgrey !important;
+    box-shadow: none !important;
+    background: $white;
+  }
+
+  &.book-date {
+    border-color: $white !important;
+    box-shadow: none !important;
+    background: $lightgrey;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-radius: 8px;
+      box-shadow: none !important;
+      border-color: $white !important;
+      background: $lightgrey;
+    }
+  }
+}
+
+//input
+.ant-input {
+  width: 100% !important;
+  height: 3.2rem;
+  border-radius: 8px;
+  border-color: $lightgrey !important;
+  box-shadow: none !important;
+  padding: 1rem;
+  background: $white;
+  font-family: "Avenir-Regular", sans-serif !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    height: 3.2rem;
+    border-radius: 8px;
+    border-color: $lightgrey !important;
+    box-shadow: none !important;
+    background: $white;
+  }
+
+  &.book-input {
+    border-color: $white !important;
+    background: $lightgrey !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $white !important;
+      background: $lightgrey;
+    }
+  }
+}
+
+.ant-select.ant-select-single.ant-select-show-arrow {
+  .ant-select-selector {
+    padding-top: 0.5rem;
+    height: auto;
+    min-height: 3.3rem;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none !important;
+    border-color: $lightgrey !important;
+    background: $white;
+
+    .ant-select-selection-search {
+      .ant-select-selection-search-input {
+        padding-top: 1rem !important;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $lightgrey !important;
+      background: $white;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    span.ant-select-selection-item {
+      background: transparent;
+    }
+
+    span.ant-select-arrow {
+      margin-top: 0.05rem !important;
+    }
+
+    .ant-select-selection-item {
+      background: $white;
+    }
+  }
+}
+
+// book select
+.book-select.ant-select.ant-select-single.ant-select-show-arrow,
+.ant-select.book-select.ant-select-multiple.ant-select-allow-clear.ant-select-show-search {
+  .ant-select-selector {
+    padding-top: 0.5rem;
+    height: auto;
+    min-height: 3.3rem;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none !important;
+    border-color: $white !important;
+    background: $lightgrey;
+
+    .ant-select-selection-search {
+      .ant-select-selection-search-input {
+        padding-top: 1rem !important;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $white !important;
+      background: $lightgrey;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    span.ant-select-arrow {
+      margin-top: 0.05rem !important;
+    }
+
+    .ant-select-selection-item {
+      background: $lightgrey;
+    }
+  }
+}
+
+.ant-form-item-control-input-content {
+  margin-bottom: 0.3rem;
+
+  span.ant-input-password.ant-input-affix-wrapper.book-password {
+    background: $white;
+    border-color: $lightgrey !important;
+
+    input {
+      background: $white;
+    }
+  }
+
+  span.ant-input-password.ant-input-affix-wrapper,
+  .ant-input-affix-wrapper {
+    height: 3.2rem;
+    border-radius: 8px;
+    border-color: $lightgrey !important;
+    box-shadow: none !important;
+
+    .ant-input-suffix,
+    .ant-input-prefix {
+      margin: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .ant-input {
+      height: 100%;
+      border-radius: 8px;
+      border-color: $lightgrey !important;
+      box-shadow: none !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $lightgrey !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+//interested modal
+.interested-modal {
+  width: 60% !important;
+
+  @include mobile() {
+    width: 100% !important;
+  }
+
+  .form-holder {
+    .footnote {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 1rem;
+    }
+
+    .ant-form-item {
+      padding: 1rem;
+      border: 1px solid $blue;
+      margin-bottom: 1rem;
+      &:last-child {
+        padding: unset;
+        border: unset;
+        margin-bottom: unset;
+      }
+    }
+
+    .ant-checkbox-group {
+      width: 100%;
+      margin-bottom: 0.5rem;
+
+      .ant-checkbox-wrapper {
+        width: 100%;
+
+        .ant-checkbox + span {
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// paymentmodal
+.paystack-modal {
+  .payment-modal-main {
+    .cost-numbers {
+      display: flex;
+    }
+
+    .heading {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 1rem;
+      &.hidctor,
+      &.amount {
+        font-weight: 700;
+      }
+      &.amount {
+        font-size: 25px;
+        margin-bottom: 0rem;
+
+        @include mobile() {
+          margin-bottom: 1rem;
+        }
+
+        &.former-price {
+          text-decoration: line-through;
+        }
+
+        &:last-child {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .cost-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include mobile() {
+        flex-direction: column;
+      }
+    }
+
+    .paystack-btn {
+      width: 30%;
+
+      @include mobile() {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//book drawer
+.book-drawer {
+  .cancel-btn {
+    background: $black;
+  }
+
+  .ant-drawer-content-wrapper {
+    width: 40% !important;
+
+    @include mobile() {
+      width: 85% !important;
+    }
+
+    .heading {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 1rem;
+      &.hidctor,
+      &.amount {
+        font-weight: 700;
+      }
+      &.amount {
+        font-size: 25px;
+
+        &.former-price {
+          text-decoration: line-through;
+        }
+
+        &:last-child {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .footnote {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .form-holder {
+      box-sizing: border-box;
+
+      .slots-holder {
+        position: relative;
+
+        &.loading {
+          margin: 1rem 0rem 2rem;
+        }
+
+        .none-found {
+          margin-left: 1.7rem;
+          color: $fontgrey;
+        }
+      }
+    }
+
+    .cost-numbers {
+      display: flex;
+    }
+  }
+}
+
+@import "../components/nav/nav.scss";
+@import "../components/footer/footer.scss";
+@import "../components/bannerform/bannerform.scss";
+@import "../components/search/related/related.scss";
+@import "../components/search/doctor/doctor.scss";
+@import "../components/pageloader/pageloader.scss";
+
+@import "./homepage/homepage.scss";
+@import "./membership/membership.scss";
+@import "./telemedicine/telemedicine.scss";
+@import "./book/book.scss";
+@import "./search/search.scss";
+@import "./covid/covid.scss";

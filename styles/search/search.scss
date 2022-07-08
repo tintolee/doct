@@ -1,0 +1,121 @@
+.search {
+  position: relative;
+
+  .processing {
+    background: rgba($color: #000000, $alpha: 0.3);
+    position: absolute;
+    width: 100%;
+    z-index: 2000;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20rem;
+
+    // justify-content: center;
+    svg {
+      color: $white !important;
+    }
+
+    .pro-text {
+      color: $white;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29.44px;
+      text-align: center;
+    }
+  }
+
+  .search-main {
+    position: relative;
+
+    .banner {
+      padding: 2rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1rem 4rem;
+      }
+
+      .footnote {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        cursor: pointer;
+      }
+    }
+    .search-body {
+      padding: 0rem 3rem 3rem;
+
+      @include mobile() {
+        padding: 0rem 1rem 4rem;
+      }
+
+      .custom-line {
+        border: 1px solid #d2d2d2;
+        margin-bottom: 2rem;
+      }
+
+      // .search-body-content {
+      // }
+
+      .filter-holder {
+        .filter-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          p {
+            margin-bottom: 0rem;
+            &.heading {
+              font-size: 20px;
+              line-height: 25px;
+              font-weight: 500;
+            }
+            &.clear-text {
+              font-size: 18px;
+              line-height: 21px;
+              color: $blue;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .filter-form {
+          margin-top: 2rem;
+          .fiterlabel {
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        .related-searches {
+          margin-top: 3rem;
+          .title {
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .resultnumber {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+      }
+
+      .showing {
+        font-size: 18px;
+        line-height: 21px;
+        // color: $blue;
+        color: #b4b4b4;
+      }
+
+      .result-holder {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

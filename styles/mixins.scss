@@ -1,0 +1,66 @@
+// responsiveness
+@mixin desktop() {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 668px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin mini-desktop() {
+  @media (min-width: 1005px) and (max-width: 1251px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin smallmobile() {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin largedesktop() {
+  @media (min-width: 1550px) {
+    @content;
+  }
+}
+
+// colors
+$light-blue: #D0E9F726;
+$white: #ffffff;
+$black: #000000;
+$orange: #f2994a;
+$theme-blue: #2B82DD;
+$blue: #2d9cdb;
+$lightblue: #56ccf2;
+$lightwhite: #e0e0e0;
+$grey: #828282;
+$lightgrey: #f2f2f2;
+$lightergrey: #bdbdbd;
+$coin: #fdbf00;
+$dashboard: #f0faff;
+$solidDash: #2d9cdb;
+$disabled: #f5f5f5;
+$red: #eb5757;
+$fontgrey: #4f4f4f;
+$fadedblue: #d0e9f7;
+$carton: #fdf3e9;
+$kgrey: #e6e6e6;
+$lightgreen: #4bd37b;
+$deepblue: #061a33;
+$lightergreen: #42ff00;
+$deepbluelight: #0c294e;
+$lightwhite: #e5e5e5;
+$offerblue: #E6F3FB;
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

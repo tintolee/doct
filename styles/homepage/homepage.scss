@@ -1,0 +1,364 @@
+.homepage {
+  .homepage-main {
+    .banner {
+      background: rgba(208, 233, 247, 0.15);
+      height: 40rem;
+      position: relative;
+
+      .banner-text {
+        padding: 10rem 3rem 2rem;
+        width: 66%;
+
+        @include mobile() {
+          padding: 4rem 1.5rem 2rem;
+          width: 100%;
+        }
+
+        .title {
+          font-size: 54px;
+          line-height: 58px;
+          font-weight: 700;
+        }
+        .footnote {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 5rem;
+        }
+        .into-btn {
+          padding: 0.7rem 1.8rem 2.5rem;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 25px;
+        }
+      }
+
+      .bannerimg {
+        position: absolute;
+        right: 0;
+        top: 0rem;
+        height: 39rem;
+        width: 30rem;
+
+        @include mobile() {
+          display: none;
+        }
+      }
+    }
+
+    .tested {
+      display: grid;
+      padding: 2rem 3rem;
+      grid-template-columns: auto repeat(4, 1fr);
+      align-items: center;
+      grid-gap: 1rem;
+      justify-content: center;
+
+      @include mobile() {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        grid-template-columns: 1fr;
+      }
+
+      .footnote {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 0;
+        text-align: center;
+
+        @include mobile() {
+          text-align: center;
+        }
+      }
+
+      .img-holder {
+        position: relative;
+        height: 6rem;
+        width: 100%;
+
+        @include mobile() {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .todo {
+      padding: 4rem 0;
+
+      @include mobile() {
+        padding: 2rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .footnote {
+        text-align: center;
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+
+      .todo-holder {
+        padding: 0 3rem;
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 0.5rem;
+        margin-top: 4rem;
+        
+       
+
+        @include mobile() {
+          display: none;
+        }
+
+        .action-icon {
+          position: relative;
+          cursor: pointer;
+          height: 3rem;
+          width: 3rem;
+          // &.left {
+          // }
+          // &.right {
+          // }
+        }
+
+        .todos-main {
+          display: grid;
+          align-items: center;
+          justify-content: space-between;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 1rem;
+         
+
+        }
+       
+
+
+        .todo-item {
+          background: $blue;
+          display: flex;
+          border-radius: 8px;
+          padding: 1.5rem 2rem;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .img {
+            position: relative;
+            height: 5rem;
+            margin-bottom: 3rem;
+            width: 100%;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 28px;
+            color: $white;
+            margin-bottom: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .works {
+      padding: 4rem 3rem;
+      position: relative;
+
+      @include mobile() {
+        padding: 2rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .footnote {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+
+        @include mobile() {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .img {
+        height: 12rem;
+        width: 50%;
+        position: absolute;
+        left: 20rem;
+        top: 12rem;
+        @include mobile() {
+          display: none;
+        }
+      }
+
+      .works-holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-top: 4.5rem;
+        position: relative;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .works-item {
+          background: $blue;
+          padding: 2.3rem 1.5rem;
+          text-align: center;
+          border-radius: 8px;
+          color: $white;
+          font-size: 20px;
+          line-height: 24px;
+          height: 7.3rem;
+        }
+      }
+    }
+
+    .allinone {
+      padding: 3rem 3rem;
+      background: rgba(208, 233, 247, 0.15);
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .footnote {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+      }
+
+      .action-holder {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        .action-btn {
+          padding: 0.7rem 1.8rem 2.5rem;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 25px;
+          background: $orange;
+        }
+      }
+    }
+
+    .questions {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .ant-collapse-header {
+        background: $white;
+        font-size: 20px;
+        line-height: 25px;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+    }
+
+    .testimonies {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .testimonies-holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .testimony {
+          background: $white;
+          box-shadow: 0px 5px 20px rgba(196, 196, 196, 0.37);
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .test-text {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .user-info {
+            display: flex;
+            margin-top: 3rem;
+            align-items: center;
+            .img {
+              position: relative;
+              border-radius: 50%;
+              height: 4.5rem;
+              width: 4.5rem;
+              margin-right: 1rem;
+            }
+            .user-name {
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

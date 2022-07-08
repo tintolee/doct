@@ -1,0 +1,346 @@
+.covid {
+  .covid-main {
+    .banner {
+      height: 40rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile() {
+        height: fit-content;
+      }
+
+      .banner-text {
+        padding: 10rem 3rem 2rem;
+        width: 55%;
+
+        @include mobile() {
+          padding: 4rem 1.5rem 2rem;
+          width: 100%;
+        }
+
+        .title {
+          font-size: 54px;
+          line-height: 58px;
+          font-weight: 700;
+        }
+        .footnote {
+          font-weight: 500;
+          font-size: 23px;
+          line-height: 25px;
+          margin-bottom: 3rem;
+
+          &.below {
+            margin-bottom: 1rem;
+          }
+          &.below-down {
+            font-weight: 700;
+            margin-bottom: 1rem;
+          }
+
+          @include mobile() {
+            margin-bottom: 1em;
+          }
+        }
+
+        .into-btn {
+          padding: 0.7rem 1.8rem 2.5rem;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .bannerimg {
+        position: relative;
+        // position: absolute;
+        // right: 0;
+        // top: 1rem;
+        // height: 35rem;
+        // width: 30rem;
+        width: 40%;
+        background: $blue;
+
+        @include mobile() {
+          display: none;
+        }
+      }
+    }
+
+    .dataform-holder {
+      padding: 0 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .dataform {
+        box-shadow: 0px 4px 20px rgba(196, 196, 196, 0.53);
+        background: $white;
+        padding: 1.5rem 2rem 0em;
+        width: 70%;
+
+        @include mobile() {
+          width: 100%;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .types {
+      padding: 6rem 10rem;
+      display: flex;
+      justify-content: center;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+        flex-direction: column;
+      }
+
+      .img-holder {
+        position: relative;
+        height: 4rem;
+        width: 100%;
+
+        @include mobile() {
+          margin-bottom: 1rem;
+        }
+
+        // @include mobile() {
+        //   margin: 0 auto;
+        // }
+      }
+    }
+
+    .why {
+      padding: 0 3rem;
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+        flex-direction: column;
+      }
+
+      .img-holder {
+        position: relative;
+        height: 30em;
+        width: 40%;
+        background: $blue;
+
+        @include mobile() {
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+      }
+
+      .text-info {
+        width: 55%;
+
+        @include mobile() {
+          width: 100%;
+        }
+
+        .title {
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 25px;
+          margin-bottom: 3rem;
+        }
+
+        .headings {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          .img-icon {
+            position: relative;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+          }
+
+          .heading-text {
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 25px;
+            margin-bottom: 0rem;
+          }
+        }
+
+        .texts {
+          font-size: 18px;
+          line-height: 23px;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .advantage {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 25px;
+        margin-bottom: 3rem;
+      }
+
+      .headings {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        .img-icon {
+          position: relative;
+          height: 2rem;
+          width: 2rem;
+          margin-right: 1rem;
+        }
+
+        .heading-text {
+          font-weight: 500;
+          font-size: 23px;
+          line-height: 25px;
+          margin-bottom: 0rem;
+        }
+      }
+    }
+
+    .main-form {
+      padding: 3rem 3rem;
+      display: flex;
+      justify-content: space-between;
+
+
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+        flex-direction: column;
+      }
+
+      .img-holder {
+        position: relative;
+        height: 50em;
+        width: 40%;
+        background: $blue;
+
+        @include mobile() {
+          margin-bottom: 1rem;
+          width: 100%;
+          display: none;
+        }
+      }
+
+      .form-holder {
+        width: 58%;
+        @include mobile() {
+          width: 100%;
+        }
+
+        .title {
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 30px;
+          margin-bottom: 3rem;
+
+        }
+
+        .submit-btn {
+          width: 50%;
+        }
+      }
+    }
+
+    .questions {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .ant-collapse-header {
+        background: $white;
+        font-size: 20px;
+        line-height: 25px;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+    }
+
+    .testimonies {
+      padding: 3rem 3rem;
+
+      @include mobile() {
+        padding: 3rem 1.5rem;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .testimonies-holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+
+        @include mobile() {
+          grid-template-columns: 1fr;
+        }
+
+        .testimony {
+          background: $white;
+          box-shadow: 0px 5px 20px rgba(196, 196, 196, 0.37);
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .test-text {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .user-info {
+            display: flex;
+            margin-top: 3rem;
+            align-items: center;
+            .img {
+              position: relative;
+              border-radius: 50%;
+              height: 4.5rem;
+              width: 4.5rem;
+              margin-right: 1rem;
+            }
+            .user-name {
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
